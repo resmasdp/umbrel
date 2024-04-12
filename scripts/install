@@ -260,7 +260,7 @@ EOF
   if [[ "${INSTALL_UMBREL}" = "true" ]]
   then
     mkdir -p "${UMBREL_INSTALL_PATH}"
-    if [[ "$(ls --almost-all "${UMBREL_INSTALL_PATH}")" ]]
+    if [[ "$(ls --A "${UMBREL_INSTALL_PATH}")" ]]
     then
       echo "Error: Umbrel install path \"${UMBREL_INSTALL_PATH}\" already contains files"
       echo "You can install Umbrel in a custom location with:"
